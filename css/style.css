@@ -7,3 +7,53 @@
 html {
     font-family: 'Roboto', sans-serif;
 }
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+ul, li, menu {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* layout */
+.app-content {
+    width: 100%;
+    display: flex;
+}
+
+.app-main-content {
+    flex-grow: 1;
+}
+
+
+
+
+
+/* debug */
+
+.debug #app {
+    border: 1px solid red;
+}
+
+.debug .container {
+    border: 1px solid black;
+}
+
+.debug .app-content{
+    border: 1px solid blue;
+}
+
+.debug .app-sidebar {
+    border: 1px solid lightskyblue;
+}
+
+.debug .app-main-content {
+    border: 1px solid green;
+}
+
+
+
