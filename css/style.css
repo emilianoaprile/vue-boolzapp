@@ -24,6 +24,15 @@ html {
     height: 100%;
 }
 
+.user-img-wrapper {
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
 .app-wrapper,
 .app-content {
     width: 100%;
@@ -31,7 +40,7 @@ html {
     overflow: hidden;
 }
 
-ul, li, menu {
+ul, li, menu, a {
     list-style: none;
     text-decoration: none;
 }
@@ -87,8 +96,149 @@ ul, li, menu {
 .user-profile,
 .contact-profile,
 .text-board {
+    height: 50px;
+}
+
+/* side bar */
+
+.user-profile {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-profile .user-account,
+.user-profile .user-account-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-img-wrapper .user-img {
+    aspect-ratio: 1;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.user-profile .user-tools {
+    display: flex;
+    gap: 10px;
+}
+
+.notifications {
+    display: flex;
+    padding: 10px;
+    align-items: center;
     height: 60px;
 }
+
+.notification-icon {
+    background-color: white;
+    width: 30px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    color: rgb(142, 218, 252);
+}
+
+.notification-cta-text {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: underline;
+}
+
+.notification-cta-active {
+    margin-top: 3px;
+    display: block;
+}
+
+.search-bar {
+    padding: 5px;
+}
+
+.search-bar .search-wrapper {
+    display: flex;
+    padding: 3px 3px;
+    border-radius: 5px;
+    background-color: white;
+    height: 30px;
+}
+
+.search-bar .search-icon {
+    width: 40px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.search-input-bar {
+    flex-grow: 1;
+}
+
+::placeholder {
+    font-size: 11px;
+}
+
+.search-account-input {
+    width: 100%;
+    border-radius: 5px;
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* background - color - font-size */
+
+.chat-content.bg-mine {
+    background-image: url(../img/mine.jpg);
+    background-size: repeat;
+}
+
+.bg-grey {
+    background-color: rgb(234, 234, 234);
+}
+
+.bg-light-blue {
+    background-color: rgb(142, 218, 252);
+}
+
+.color-grey {
+    color: #B2B1B2;
+}
+
+.font-size-md {
+    font-size: 13px;
+}
+
+.font-size-sm {
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+
 
 
 
