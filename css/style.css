@@ -301,7 +301,7 @@ a {
     align-self: flex-end;
     max-width: 80%;
     padding: 10px 8px;
-    font-size: 12px;
+    font-size: 13px;
     border-radius: 10px;
     display: flex;
     gap: 10px;
@@ -316,7 +316,7 @@ a {
     align-self: flex-start;
     max-width: 80%;
     padding: 10px 8px;
-    font-size: 12px;
+    font-size: 13px;
     border-radius: 10px;
     display: flex;
     gap: 10px;
@@ -324,7 +324,7 @@ a {
 
 .message-time {
     align-self: flex-end;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 

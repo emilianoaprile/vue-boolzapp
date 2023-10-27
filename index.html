@@ -83,131 +83,19 @@
                         </div>
                     </div>
 
+                    <!-- contacts-list -->
+
                     <div class="contacts">
 
                         <ul class="contacts-list">
-                            <li class="contact-list-item">
+                            <li v-for="(contact, index) in contacts" :key="index" class="contact-list-item">
                                 <figure class="user-img-wrapper">
-                                    <img class="user-img" src="./img/avatar_1.jpg" alt="">
+                                    <img class="user-img" :src="contact.avatar" alt="">
                                 </figure>
 
                                 <div class="user-account-name">
-                                    <p class="user-name font-size-md">Michele</p>
+                                    <p class="user-name font-size-md">{{ contact.name }}</p>
                                     <p class="user-last-message color-grey font-size-sm">Ultimo messaggio inviato</p>
-                                </div>
-
-                                <div class="contact-list-time">
-                                    <span class="font-size-sm">12:00</span>
-                                </div>
-                            </li>
-
-                            <li class="contact-list-item">
-                                <figure class="user-img-wrapper">
-                                    <img class="user-img" src="./img/avatar_2.jpg" alt="">
-                                </figure>
-
-                                <div class="user-account-name">
-                                    <p class="user-name font-size-md">Fabio</p>
-                                    <p class="user-last-message color-grey font-size-sm">Ultimo messaggio inviato</p>
-                                </div>
-
-                                <div class="contact-list-time">
-                                    <span class="font-size-sm">12:00</span>
-                                </div>
-                            </li>
-                            <li class="contact-list-item">
-                                <figure class="user-img-wrapper">
-                                    <img class="user-img" src="./img/avatar_3.jpg" alt="">
-                                </figure>
-
-                                <div class="user-account-name">
-
-                                    <p class="user-name font-size-md">Samuele</p>
-                                    <p class="user-last-message color-grey font-size-sm">Ultimo messaggio inviato</p>
-
-                                </div>
-
-                                <div class="contact-list-time">
-                                    <span class="font-size-sm">12:00</span>
-                                </div>
-                            </li>
-                            <li class="contact-list-item">
-                                <figure class="user-img-wrapper">
-                                    <img class="user-img" src="./img/avatar_4.jpg" alt="">
-                                </figure>
-
-                                <div class="user-account-name">
-
-                                    <p class="user-name font-size-md">Alessandro B.</p>
-                                    <p class="user-last-message color-grey font-size-sm">Ultimo messaggio inviato</p>
-
-                                </div>
-
-                                <div class="contact-list-time">
-                                    <span class="font-size-sm">12:00</span>
-                                </div>
-                            </li>
-                            <li class="contact-list-item">
-                                <figure class="user-img-wrapper">
-                                    <img class="user-img" src="./img/avatar_5.jpg" alt="">
-                                </figure>
-
-                                <div class="user-account-name">
-
-                                    <p class="user-name font-size-md">Alessandro L.</p>
-                                    <p class="user-last-message color-grey font-size-sm">Ultimo messaggio inviato</p>
-
-                                </div>
-
-                                <div class="contact-list-time">
-                                    <span class="font-size-sm">12:00</span>
-                                </div>
-                            </li>
-
-                            <li class="contact-list-item">
-                                <figure class="user-img-wrapper">
-                                    <img class="user-img" src="./img/avatar_6.jpg" alt="">
-                                </figure>
-
-                                <div class="user-account-name">
-
-                                    <p class="user-name font-size-md">Claudia</p>
-                                    <p class="user-last-message color-grey font-size-sm">Ultimo messaggio inviato</p>
-
-                                </div>
-
-                                <div class="contact-list-time">
-                                    <span class="font-size-sm">12:00</span>
-                                </div>
-                            </li>
-
-                            <li class="contact-list-item">
-                                <figure class="user-img-wrapper">
-                                    <img class="user-img" src="./img/avatar_7.jpg" alt="">
-                                </figure>
-
-                                <div class="user-account-name">
-
-                                    <p class="user-name font-size-md">Federico</p>
-                                    <p class="user-last-message color-grey font-size-sm">Ultimo messaggio inviato</p>
-
-                                </div>
-
-                                <div class="contact-list-time">
-                                    <span class="font-size-sm">12:00</span>
-                                </div>
-                            </li>
-
-                            <li class="contact-list-item">
-                                <figure class="user-img-wrapper">
-                                    <img class="user-img" src="./img/avatar_8.jpg" alt="">
-                                </figure>
-
-                                <div class="user-account-name">
-
-                                    <p class="user-name font-size-md">Davide</p>
-                                    <p class="user-last-message color-grey font-size-sm">Ultimo messaggio inviato</p>
-
                                 </div>
 
                                 <div class="contact-list-time">
