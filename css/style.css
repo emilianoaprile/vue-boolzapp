@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +15,9 @@ html {
 }
 
 .bg-app {
-    background-color: rgb(0, 150, 135);
+    /* background-color: rgb(0, 150, 135); */
+    background: rgb(211, 219, 219);
+    background: linear-gradient(0deg, rgba(211, 219, 219, 1) 30%, rgba(220, 219, 209, 1) 80%, rgba(0, 150, 135, 1) 80%);
 }
 
 .container {
@@ -26,11 +28,17 @@ html {
 
 .user-img-wrapper {
     display: inline-block;
+    /* border-radius: 50%; */
 }
 
 img {
     width: 100%;
     display: block;
+}
+
+.app-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .app-wrapper,
@@ -40,7 +48,10 @@ img {
     overflow: hidden;
 }
 
-ul, li, menu, a {
+ul,
+li,
+menu,
+a {
     list-style: none;
     text-decoration: none;
 }
@@ -81,17 +92,19 @@ ul, li, menu, a {
 }
 
 .app-main-content .chat-content {
-    display: flex;
     flex-grow: 1;
     overflow-y: scroll;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
     /* overflow-x: hidden; */
 }
 
-.chat-content .messages-received-sx,
+/* .chat-content .messages-received-sx,
 .chat-content .messages-send-dx {
     flex-basis: 50%;
     height: 100%;
-}
+} */
 
 .user-profile,
 .contact-profile,
@@ -215,7 +228,7 @@ ul, li, menu, a {
     position: absolute;
     right: 10px;
     top: 10px;
-    color: #B2B1B2; 
+    color: #B2B1B2;
 }
 
 .contact-list-item:hover {
@@ -274,7 +287,45 @@ ul, li, menu, a {
     appearance: none;
     border-radius: 5px;
     padding: 5px;
-}   
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.message-sent {
+    background-color: rgb(213, 249, 186);
+    align-self: flex-end;
+    max-width: 80%;
+    padding: 10px 8px;
+    font-size: 12px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.message-text {
+    line-height: 20px;
+}
+
+.message-received {
+    background-color: white;
+    align-self: flex-start;
+    max-width: 80%;
+    padding: 10px 8px;
+    font-size: 12px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.message-time {
+    align-self: flex-end;
+    font-size: 10px;
+}
 
 
 
@@ -293,8 +344,7 @@ ul, li, menu, a {
 /* background - color - font-size */
 
 .chat-content.bg-mine {
-    background-image: url(../img/mine.jpg);
-    background-size: repeat;
+    background-image: url(../img/mine.jpg); 
 }
 
 .bg-grey {
@@ -341,7 +391,7 @@ ul, li, menu, a {
     border: 1px solid black;
 }
 
-.debug .app-content{
+.debug .app-content {
     border: 1px solid blue;
 }
 
@@ -381,6 +431,3 @@ ul, li, menu, a {
     border: 1px solid violet;
 
 } */
-
-
-
