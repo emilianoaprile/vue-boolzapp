@@ -5,6 +5,11 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            // creo currentIndex 0 per aggiungere la classe active al contatto attivo
+            currentIndex: 0,
+
+            chatIndex: null,
+
             contacts: [
                 {
                     name: 'Michele',
@@ -172,5 +177,29 @@ createApp({
     },
     methods: {
 
+        
     }
 }).mount('#app')
+
+
+
+// const array = [
+//     {
+//         name: "Pippo",
+//         items: [
+//             {
+//                 price: 0.99,
+//                 banned: [
+//                     {
+//                         name: "Topolino"
+//                     }
+//                 ]
+//             },
+//             {
+//                 price: 10.99
+//             },
+//         ]
+//     }
+// ];
+
+// console.log(array[0].items[0].banned[0].name);

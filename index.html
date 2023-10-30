@@ -88,6 +88,7 @@
                     <div class="contacts">
 
                         <ul class="contacts-list">
+                            <!-- aggiungere classe active -->
                             <li v-for="(contact, index) in contacts" :key="index" class="contact-list-item">
                                 <figure class="user-img-wrapper">
                                     <img class="user-img" :src="contact.avatar" alt="">
@@ -121,7 +122,7 @@
 
                             <div class="contact-account-name">
 
-                                <p class="contact-name font-size-md">Michele</p>
+                                <p class="contact-name font-size-md">{{ contacts[currentIndex].name }}</p>
                                 <p class="color-grey font-size-sm">Ultimo accesso oggi alle 12:00</p>
 
                             </div>
@@ -151,20 +152,12 @@
                     </header>
 
                     <section class="chat-content bg-mine">
-                            <ul class="chat-messages">
-                                <li class="message-sent">
-                                    <p class="message-text">Hai portato a spasso il cane?</p>
-                                    <div class="message-time">12:00</div>
-                                </li>
-                                <li class="message-received">
-                                    <p class="message-text">Tutto fatto!</p>
-                                    <div class="message-time">12:00</div>
-                                </li>
-                                <li class="message-sent">
-                                    <p class="message-text">Perfetto!!</p>
-                                    <div class="message-time">12:00</div>
-                                </li>
-                            </ul>
+                        <ul class="chat-messages">
+                            <li v-for="item in contacts[currentIndex].messages" :class=" 'message-' + item.status ">
+                                <p class="message-text">{{ item.message }}</p>
+                                <div class="message-time">12:00</div>
+                            </li>
+                        </ul>
                     </section>
 
                     <footer class="text-board bg-grey">
